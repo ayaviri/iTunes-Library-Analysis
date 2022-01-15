@@ -1,0 +1,10 @@
+ok, so i want to make sense of the available listening data from itunes and its outputted xml
+file. let's make an initial version that outputs everthing as text
+
+in order to run an update query in mysql-connect, the timestamp objects must be of type string.
+this conversion can be done using the datetime.strftime() method, which converts python datetime 
+objects into the appropriate string for insertion into a sql query
+
+in addition to this, in order to insert a timestamp object, single quotes must be placed around
+the value placeholder in order to be read correctly. otherwise, the string is treated as a scalar
+or a literal
